@@ -1,13 +1,151 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>能力勋章介绍</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>能力勋章介绍页</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+				background:#e6ddce;
+			}
+			@font-face {
+				font-family:fzmwt;
+				src: url("font/方正喵呜体.ttf");
+			}
+			#toptitle{
+				position: fixed;
+				width: 100%;
+				height: 80px;
+				background: #564f43;
+				font-size: 32px;
+				line-height: 60px;
+				color: #fff;
+				text-align: center;
+				top: 0;
+				z-index: 998;
+			}
+			#searchbox{
+				position: absolute;
+				bottom: 7px;
+				width: 220px;
+				border-radius: 10px;
+				padding: 1px 5px;
+				outline:none;  
+				border:none;
+			}
+			.newfont{
+				font-family: fzmwt;
+			}
+			#fontbutton{
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				text-align: center;
+				line-height: 20px;
+				border-radius: 10px;
+				font-size: 16px;
+				right: 30px;
+				top:30px;
+				color: #564F43;
+				cursor:pointer;
+				background: #fff;
+				z-index: 999;
+			}
+			#foot{
+				position: fixed;
+				width: 100%;
+				height: 25px;
+				background: #564f43;
+				font-size: 15px;
+				line-height: 25px;
+				color: #fff;
+				text-align: center;
+				bottom: 0;
+			}
+			#game_list{
+				position: absolute;
+				top: 80px;
+				width: 100%;
+				overflow-y: scroll;
+			}
+			.game_box{
+				width: 100%;
+				height: auto;
+				min-height: 84px;
+				margin-bottom: 5px;
+				border-bottom: 1px solid #a5957b;
+				overflow: hidden;
+			}
+			.game_img{
+				position: absolute;
+				width: 64px;
+				height: 64px;
+				margin: 10px;
+			}
+			.game_title{
+				position: absolute;
+				font-size: 20px;
+				margin-left: 84px;
+				margin-top: 5px;
+				color: #f66;
+			}
+			.game_jianjie{
+				float: left;
+				margin-left: 84px;
+				margin-top: 5px;
+				color: #272727;
+				font-size: 14px;
+			}
+		</style>
 	</head>
 	<body>
-		<script src="js/pdfobject.min.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			PDFObject.embed("readme/ReadMe.pdf", );
-		</script>
+		<div id="toptitle">
+			能力勋章介绍页
+			<input type="search"  placeholder="请输入您要搜索的关键字" id="searchbox">
+		</div>
+		<div id="fontbutton" title="切换字体">A</div>
+		<div id="game_list">
+		</div>
+		<div id="foot">
+			Copyright © 2019 by Hengzi. All Rights Reserved.
+		</div>
 	</body>
+	<script src="js/jquery-2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#game_list").css("height",window.innerHeight-105);
+		$("#searchbox").css("left",(window.innerWidth-$("#searchbox").width()-10)/2);
+		$(window).resize(function(){
+			$("#searchbox").css("left",(window.innerWidth-$("#searchbox").width()-10)/2);
+		})
+		var shuju=$.ajax({url:"data/functional_medal.json",async:false}).responseJSON;
+		var htmlstr="";
+		spawnList();
+		function spawnList(){
+			for(var i=0;i<shuju.length;i++){
+				htmlstr="";
+				htmlstr+="<div class=\"game_box\"><img class=\"game_img\" src=\"img/"+shuju[i].item_code+".png\"/><div class=\"game_jianjie\">";
+				htmlstr+="<b>名称：</b>"+shuju[i].item_name;
+				htmlstr+="<br><b>代码：</b>"+shuju[i].item_code;
+				htmlstr+="<br><b>功能：</b>"+shuju[i].item_function;
+				if(shuju[i].item_cailiao!="") htmlstr+="<br><b>配方：</b>"+shuju[i].item_cailiao;
+				if(shuju[i].item_keji!="") htmlstr+="<br><b>科技：</b>"+shuju[i].item_keji+"（"+shuju[i].item_zhizuolan+"）";
+				if(shuju[i].item_huoqu!="") htmlstr+="<br><b>获取：</b>"+shuju[i].item_huoqu;
+				if(shuju[i].item_yinke!="") htmlstr+="<br><b>印刻：</b>"+shuju[i].item_yinke;
+				if(shuju[i].item_naijiu!="") htmlstr+="<br><b>耐久：</b>"+shuju[i].item_naijiu;
+				if(shuju[i].item_special!="") htmlstr+="<br><b>特殊：</b>"+shuju[i].item_special;
+				htmlstr+="</div></div>";
+				$("#game_list").append(htmlstr);
+			}
+		}
+		$("#fontbutton").click(function(){
+			$("#toptitle").toggleClass("newfont");
+			$(".game_jianjie").toggleClass("newfont");
+		})
+		$("#searchbox").bind('input propertychange', function(){
+			$(".game_box").hide().filter(":contains('"+$("#searchbox").val()+"')").show(); 
+		});
+	</script>
 </html>
