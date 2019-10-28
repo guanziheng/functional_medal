@@ -120,13 +120,13 @@
 		$(window).resize(function(){
 			$("#searchbox").css("left",(window.innerWidth-$("#searchbox").width()-10)/2);
 		})
-		var shuju=$.ajax({url:"data/functional_medal.json",async:false}).responseJSON;
+		var shuju=$.ajax({url:"data/functional_medal2.json",async:false}).responseJSON;
 		var htmlstr="";
 		spawnList();
 		function spawnList(){
 			for(var i=0;i<shuju.length;i++){
 				htmlstr="";
-				htmlstr+="<div class=\"game_box\"><img class=\"game_img\" src=\"img/"+shuju[i].item_code+".png\"/><div class=\"game_jianjie\">";
+				htmlstr+="<div class=\"game_box\"><img class=\"game_img\" src=\""+shuju[i].item_img+"\"/><div class=\"game_jianjie\">";
 				htmlstr+="<b>名称：</b>"+shuju[i].item_name;
 				htmlstr+="<br><b>代码：</b>"+shuju[i].item_code;
 				htmlstr+="<br><b>功能：</b>"+shuju[i].item_function;
