@@ -10,7 +10,8 @@
     "item_cailiao": "入门料理勋章*1+热量爆炸勋章*1+膳食均衡勋章*1",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": "沃利装备大厨勋章时吃同样的东西属性不会下降"
+    "item_special": "沃利装备大厨勋章时吃同样的东西属性不会下降",
+    "item_img": "img/chef_certificate.png"
   },
   {
     "item_name": "“自然风味”勋章",
@@ -23,7 +24,8 @@
     "item_cailiao": "大肉干*10+怪物肉干*10+小肉干*10",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef1_medal.png"
   },
   {
     "item_name": "“失败料理”勋章",
@@ -36,7 +38,8 @@
     "item_cailiao": "失败料理*20",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef2_medal.png"
   },
   {
     "item_name": "“黑暗料理”勋章",
@@ -49,7 +52,8 @@
     "item_cailiao": "火药饼*1+怪物千层饼*1+鳄梨沙拉*1+蝴蝶松饼*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef3_medal.png"
   },
   {
     "item_name": "“无肉不欢”勋章",
@@ -62,7 +66,8 @@
     "item_cailiao": "肉汤*1+培根煎蛋*1+蜂蜜火腿*1+火鸡大餐*1+肉丸*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef4_medal.png"
   },
   {
     "item_name": "“百味烧烤”勋章",
@@ -75,7 +80,8 @@
     "item_cailiao": "肉串*5+土豆串*5",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef5_medal.png"
   },
   {
     "item_name": "“麻辣川香”勋章",
@@ -88,7 +94,8 @@
     "item_cailiao": "辣椒酱*1+辣椒炒肉*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef6_medal.png"
   },
   {
     "item_name": "“果味料理”勋章",
@@ -101,7 +108,8 @@
     "item_cailiao": "火龙果派*1+果酱*1+西瓜冰*1+水果圣代*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef7_medal.png"
   },
   {
     "item_name": "“健康时蔬”勋章",
@@ -114,7 +122,8 @@
     "item_cailiao": "香酥茄盒*1+奶油土豆泥*1+蔬菜杂烩*1+蔬菜鸡尾酒*1+芦笋汤*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef8_medal.png"
   },
   {
     "item_name": "“生鲜鱼肉”勋章",
@@ -127,7 +136,8 @@
     "item_cailiao": "酸橘汁腌鱼*1+鱼排*1+炸鱼卷*1+蛙腿三明治*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef9_medal.png"
   },
   {
     "item_name": "“饭后甜点”勋章",
@@ -140,7 +150,8 @@
     "item_cailiao": "南瓜饼干*1+糖豆*1+太妃糖*1+什锦干果*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef10_medal.png"
   },
   {
     "item_name": "“入门料理”勋章",
@@ -153,7 +164,8 @@
     "item_cailiao": "自然风味勋章*1+失败料理勋章*1+黑暗料理勋章*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef11_medal.png"
   },
   {
     "item_name": "“热量爆炸”勋章",
@@ -166,7 +178,8 @@
     "item_cailiao": "无肉不欢勋章*1+百味烧烤勋章*1+麻辣川香勋章*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef12_medal.png"
   },
   {
     "item_name": "“膳食均衡”勋章",
@@ -179,7 +192,8 @@
     "item_cailiao": "果味料理勋章*1+健康时蔬勋章*1+生鲜鱼肉勋章*1+饭后甜点勋章*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef13_medal.png"
   },
   {
     "item_name": "主厨勋章",
@@ -192,7 +206,8 @@
     "item_cailiao": "大厨勋章*1+功能料理勋章*1+营养食补勋章*1+调味料理勋章*1",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": "沃利装备主厨勋章时吃同样的东西属性不会下降"
+    "item_special": "沃利装备主厨勋章时吃同样的东西属性不会下降",
+    "item_img": "img/headchef_certificate.png"
   },
   {
     "item_name": "“功能料理”勋章",
@@ -205,7 +220,8 @@
     "item_cailiao": "福特羊肉冻*1+蓝带鱼排*1+热龙椒沙拉*1+芦笋凉菜汤*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef14_medal.png"
   },
   {
     "item_name": "“营养食补”勋章",
@@ -218,7 +234,8 @@
     "item_cailiao": "鲜果可丽饼*1+骨头汤*1+海鲜杂烩*1+曼德拉草汤*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef15_medal.png"
   },
   {
     "item_name": "“调味料理”勋章",
@@ -231,7 +248,8 @@
     "item_cailiao": "辣肉丸*10+甜肉丸*10+蒜香肉丸*10",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/chef16_medal.png"
   },
   {
     "item_name": "初级伐木勋章",
@@ -244,7 +262,8 @@
     "item_cailiao": "木头勋章*5",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/smallchop_certificate.png"
   },
   {
     "item_name": "中级伐木勋章",
@@ -257,7 +276,8 @@
     "item_cailiao": "初级伐木勋章*1+木头勋章*5",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/mediumchop_certificate.png"
   },
   {
     "item_name": "高级伐木勋章",
@@ -270,7 +290,8 @@
     "item_cailiao": "中级伐木勋章*1+木头勋章*10",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/largechop_certificate.png"
   },
   {
     "item_name": "木头勋章",
@@ -283,7 +304,8 @@
     "item_cailiao": "木头*20",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/log_medal.png"
   },
   {
     "item_name": "大理石斧头",
@@ -296,7 +318,8 @@
     "item_cailiao": "大理石*5+树枝*10",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/marbleaxe.png"
   },
   {
     "item_name": "巧手勋章",
@@ -309,7 +332,8 @@
     "item_cailiao": "金粉*100",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": "薇诺娜装备巧手勋章时制作东西的速度不受饱食度影响"
+    "item_special": "薇诺娜装备巧手勋章时制作东西的速度不受饱食度影响",
+    "item_img": "img/handy_certificate.png"
   },
   {
     "item_name": "小金块",
@@ -322,7 +346,8 @@
     "item_cailiao": "金子*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！"
+    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！",
+    "item_img": "img/gold_products1.png"
   },
   {
     "item_name": "碎金",
@@ -335,7 +360,8 @@
     "item_cailiao": "小金块*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！"
+    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！",
+    "item_img": "img/gold_products2.png"
   },
   {
     "item_name": "金粒",
@@ -348,7 +374,8 @@
     "item_cailiao": "碎金*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！"
+    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！",
+    "item_img": "img/gold_products3.png"
   },
   {
     "item_name": "金砂",
@@ -361,7 +388,8 @@
     "item_cailiao": "金粒*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！"
+    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！",
+    "item_img": "img/gold_products4.png"
   },
   {
     "item_name": "金粉",
@@ -374,7 +402,8 @@
     "item_cailiao": "金砂*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！"
+    "item_special": "小颗粒金制品，掉到地上就会消失，要小心保存哦！",
+    "item_img": "img/gold_products5.png"
   },
   {
     "item_name": "植物勋章",
@@ -387,7 +416,8 @@
     "item_cailiao": "水果种子*1+蔬菜种子*1+新品蔬菜种子*1+调料种子*1",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/plant_certificate.png"
   },
   {
     "item_name": "食人花手杖",
@@ -400,7 +430,8 @@
     "item_cailiao": "食人花种子*1+噩梦燃料*10+活木*5",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/lureplant_rod.png"
   },
   {
     "item_name": "水果种子",
@@ -413,7 +444,8 @@
     "item_cailiao": "火龙果种子*5+榴莲种子*5+西瓜种子*5+石榴种子*5",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/fruits_seedbag.png"
   },
   {
     "item_name": "蔬菜种子",
@@ -426,7 +458,8 @@
     "item_cailiao": "茄子种子*5+玉米种子*5+萝卜种子*5+南瓜种子*5",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/vegetables_seedbag.png"
   },
   {
     "item_name": "新品蔬菜种子",
@@ -439,7 +472,8 @@
     "item_cailiao": "芦笋种子*5+番茄种子*5+土豆种子*5",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/vegetables2_seedbag.png"
   },
   {
     "item_name": "调料种子",
@@ -452,7 +486,8 @@
     "item_cailiao": "大蒜种子*5+洋葱种子*5+辣椒种子*5",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/seasoning_seedbag.png"
   },
   {
     "item_name": "丰收勋章",
@@ -465,7 +500,8 @@
     "item_cailiao": "食人花手杖*1+蜂后王冠*1+作物勋章*10",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/harvest_certificate.png"
   },
   {
     "item_name": "作物勋章",
@@ -478,7 +514,8 @@
     "item_cailiao": "草*40+树枝*40",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/crop_medal.png"
   },
   {
     "item_name": "智慧勋章",
@@ -491,7 +528,8 @@
     "item_cailiao": "知识勋章*40",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": "老奶奶装备智慧勋章读书时减少15点精神消耗，读书后的精神不低于15"
+    "item_special": "老奶奶装备智慧勋章读书时减少15点精神消耗，读书后的精神不低于15",
+    "item_img": "img/wisdom_certificate.png"
   },
   {
     "item_name": "血汗钱",
@@ -504,7 +542,8 @@
     "item_cailiao": "金子*2+血量-25",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/toil_money.png"
   },
   {
     "item_name": "新华字典",
@@ -517,7 +556,8 @@
     "item_cailiao": "血汗钱*40",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/xinhua_dictionary.png"
   },
   {
     "item_name": "无字天书",
@@ -530,7 +570,8 @@
     "item_cailiao": "纸*2",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/closed_book.png"
   },
   {
     "item_name": "知识勋章",
@@ -543,7 +584,8 @@
     "item_cailiao": "",
     "item_huoqu": "使用新华字典读书后可以获得一个知识勋章",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/konwledge_medal.png"
   },
   {
     "item_name": "不朽之谜",
@@ -556,7 +598,8 @@
     "item_cailiao": "无字天书*1+不朽勋章*2",
     "item_huoqu": "遗失包裹中有概率开出",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/immortal_book.png"
   },
   {
     "item_name": "熊皮宝箱",
@@ -569,7 +612,8 @@
     "item_cailiao": "熊皮*1+木板*4+蜡纸*10",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/bearger_chest.png"
   },
   {
     "item_name": "不朽勋章",
@@ -582,7 +626,8 @@
     "item_cailiao": "腐烂食物*20",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/immortal_medal.png"
   },
   {
     "item_name": "不朽果实",
@@ -595,7 +640,8 @@
     "item_cailiao": "",
     "item_huoqu": "阅读不朽之谜后有几率获得",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/immortal_fruit.png"
   },
   {
     "item_name": "不朽宝石",
@@ -608,7 +654,8 @@
     "item_cailiao": "不朽果实*1+彩虹宝石*1+盐晶*10",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/immortal_gem.png"
   },
   {
     "item_name": "友善勋章",
@@ -617,11 +664,12 @@
     "item_naijiu": "",
     "item_duidie": "",
     "item_zhizuolan": "制图栏",
-    "item_keji": "制图桌+大厨勋章",
+    "item_keji": "制图桌",
     "item_cailiao": "友情勋章*10",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": "若装备友善勋章时攻击猪人或兔人，友善勋章会直接碎掉哦"
+    "item_special": "只有怪物角色可以制作，若装备友善勋章时攻击猪人或兔人，友善勋章会直接碎掉哦",
+    "item_img": "img/friendly_certificate.png"
   },
   {
     "item_name": "友情勋章",
@@ -634,7 +682,8 @@
     "item_cailiao": "",
     "item_huoqu": "怪物属性的玩家给猪人喂食太妃糖后，猪人会赠送一枚友情勋章，其他非怪物角色和佩戴友善勋章后的玩家喂食无效",
     "item_yinke": "",
-    "item_special": "给猪人喂食太妃糖时猪人依旧对玩家有仇恨，要小心别被打伤哦"
+    "item_special": "给猪人喂食太妃糖时猪人依旧对玩家有仇恨，要小心别被打伤哦",
+    "item_img": "img/friendship_medal.png"
   },
   {
     "item_name": "逮捕勋章",
@@ -647,7 +696,8 @@
     "item_cailiao": "杀人蜂*20",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/arrest_certificate.png"
   },
   {
     "item_name": "小偷勋章",
@@ -660,7 +710,8 @@
     "item_cailiao": "",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/krampus_medal.png"
   },
   {
     "item_name": "正义勋章",
@@ -673,7 +724,8 @@
     "item_cailiao": "逮捕勋章*1+小偷勋章*20",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/justice_certificate.png"
   },
   {
     "item_name": "空白勋章",
@@ -686,7 +738,8 @@
     "item_cailiao": "",
     "item_huoqu": "遗失包裹中有概率开出",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/blank_certificate.png"
   },
   {
     "item_name": "传承勋章",
@@ -699,7 +752,8 @@
     "item_cailiao": "",
     "item_huoqu": "遗失包裹中有概率开出",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/inherit_certificate.png"
   },
   {
     "item_name": "羽绒服",
@@ -712,7 +766,8 @@
     "item_cailiao": "鹿鸭羽毛*20+针线包*1+触手皮*2",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/down_filled_coat.png"
   },
   {
     "item_name": "复眼勋章",
@@ -725,7 +780,8 @@
     "item_cailiao": "巨鹿眼球*1+黄色月眼*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/ommateum_certificate.png"
   },
   {
     "item_name": "速度勋章",
@@ -738,7 +794,8 @@
     "item_cailiao": "象牙*1+沙漠之石*5",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/speed_certificate.png"
   },
   {
     "item_name": "踏水勋章",
@@ -751,7 +808,8 @@
     "item_cailiao": "邪天翁喙*1+羽毛帆布*2+饼干切割机壳*4",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/treadwater_certificate.png"
   },
   {
     "item_name": "移植勋章",
@@ -764,7 +822,8 @@
     "item_cailiao": "绿色月眼*1+食人花种子*1+肥料包*10",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": "在未装备移植勋章时挖掉上述植物只能额外获得一个相应植物的作物"
+    "item_special": "在未装备移植勋章时挖掉上述植物只能额外获得一个相应植物的作物",
+    "item_img": "img/transplant_certificate.png"
   },
   {
     "item_name": "芦苇丛",
@@ -777,7 +836,8 @@
     "item_cailiao": "",
     "item_huoqu": "装备移植勋章时挖芦苇可得",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medaldug_reeds.png"
   },
   {
     "item_name": "单果荧光花丛",
@@ -790,7 +850,8 @@
     "item_cailiao": "",
     "item_huoqu": "装备移植勋章时挖单果荧光花可得",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medaldug_flower_cave.png"
   },
   {
     "item_name": "双果荧光花丛",
@@ -803,7 +864,8 @@
     "item_cailiao": "",
     "item_huoqu": "装备移植勋章时挖双果荧光花可得",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medaldug_flower_cave_double.png"
   },
   {
     "item_name": "三果荧光花丛",
@@ -816,7 +878,8 @@
     "item_cailiao": "",
     "item_huoqu": "装备移植勋章时挖三果荧光花可得",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medaldug_flower_cave_triple.png"
   },
   {
     "item_name": "香蕉树根",
@@ -829,7 +892,8 @@
     "item_cailiao": "",
     "item_huoqu": "装备移植勋章时挖洞穴香蕉树可得",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medaldug_cave_banana_stump.png"
   },
   {
     "item_name": "香蕉树苗",
@@ -842,7 +906,8 @@
     "item_cailiao": "香蕉树根*1+木头*2+树枝*2",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medaldug_cave_banana.png"
   },
   {
     "item_name": "仙人掌苗",
@@ -855,7 +920,8 @@
     "item_cailiao": "",
     "item_huoqu": "装备移植勋章时挖仙人掌可得",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medaldug_cactus.png"
   },
   {
     "item_name": "绿洲仙人掌苗",
@@ -868,7 +934,8 @@
     "item_cailiao": "",
     "item_huoqu": "装备移植勋章时挖绿洲仙人掌可得",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medaldug_oasis_cactus.png"
   },
   {
     "item_name": "神秘植物丛",
@@ -881,7 +948,8 @@
     "item_cailiao": "",
     "item_huoqu": "装备移植勋章时挖神秘植物可得",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medaldug_wormlight_plant.png"
   },
   {
     "item_name": "勋章盒",
@@ -894,7 +962,8 @@
     "item_cailiao": "紫宝石*1+浮木*4+地毯地板*2",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/medal_box.png"
   },
   {
     "item_name": "怪物图鉴",
@@ -907,7 +976,8 @@
     "item_cailiao": "",
     "item_huoqu": "遗失包裹中有概率开出",
     "item_yinke": "",
-    "item_special": "可以通过一些特殊的方式改变某些怪物的召唤几率哦，提示：雕像"
+    "item_special": "可以通过一些特殊的方式改变某些怪物的召唤几率哦，提示：雕像",
+    "item_img": "img/monster_book.png"
   },
   {
     "item_name": "未解之谜",
@@ -920,7 +990,8 @@
     "item_cailiao": "",
     "item_huoqu": "遗失包裹中有概率开出",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/unsolved_book.png"
   },
   {
     "item_name": "触手勋章",
@@ -933,7 +1004,8 @@
     "item_cailiao": "触手皮*10+狼牙棒*1",
     "item_huoqu": "",
     "item_yinke": "可将能力印刻到空白勋章上",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/tentacle_certificate.png"
   },
   {
     "item_name": "陷阱重置册",
@@ -946,7 +1018,8 @@
     "item_cailiao": "纸*2+荆棘陷阱*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/trapreset_book.png"
   },
   {
     "item_name": "智能陷阱制作手册",
@@ -959,6 +1032,7 @@
     "item_cailiao": "懒人陷阱重置书*1+海星陷阱*1",
     "item_huoqu": "",
     "item_yinke": "",
-    "item_special": ""
+    "item_special": "",
+    "item_img": "img/autotrap_book.png"
   }
 ]
