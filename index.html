@@ -99,6 +99,15 @@
 				color: #272727;
 				font-size: 14px;
 			}
+			.copy_code{
+				background: #564f43;
+				color: #fff;
+				font-size: 12px;
+				padding: 1px 5px;
+				border-radius: 10px;
+				line-height: 12px;
+				cursor:pointer;
+			}
 		</style>
 	</head>
 	<body>
@@ -108,12 +117,24 @@
 		</div>
 		<div id="fontbutton" title="切换字体">A</div>
 		<div id="game_list">
+			
+			<!-- <div class="game_box">
+				<img class="game_img" src="img/blank_certificate.png" >
+				<div class="game_jianjie">
+					<b>名称：</b>123
+					<br><b>代码：</b><label>abc</label> <label class="copy_code">复制</label>
+					<br><b>功能：</b>哈哈啊哈哈哈话说哈哈哈是啊
+					<br><b>获取：</b>付借款方海口市发大水口积分兑换看递减法饥荒
+				</div>
+			</div> -->
+			
 		</div>
 		<div id="foot">
 			Copyright © 2019 by Hengzi. All Rights Reserved.
 		</div>
 	</body>
 	<script src="js/jquery-2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/clipboard.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$("#game_list").css("height",window.innerHeight-105);
 		$("#searchbox").css("left",(window.innerWidth-$("#searchbox").width()-10)/2);
@@ -128,7 +149,8 @@
 				htmlstr="";
 				htmlstr+="<div class=\"game_box\"><img class=\"game_img\" src=\""+shuju[i].item_img+"\"/><div class=\"game_jianjie\">";
 				htmlstr+="<b>名称：</b>"+shuju[i].item_name;
-				htmlstr+="<br><b>代码：</b>"+shuju[i].item_code;
+				htmlstr+="<br><b>代码：</b><label>"+shuju[i].item_code;
+				htmlstr+="</label> <label class=\"copy_code\">复制</label>";
 				htmlstr+="<br><b>功能：</b>"+shuju[i].item_function;
 				if(shuju[i].item_cailiao!="") htmlstr+="<br><b>配方：</b>"+shuju[i].item_cailiao;
 				if(shuju[i].item_keji!="") htmlstr+="<br><b>科技：</b>"+shuju[i].item_keji+"（"+shuju[i].item_zhizuolan+"）";
@@ -147,5 +169,9 @@
 		$("#searchbox").bind('input propertychange', function(){
 			$(".game_box").hide().filter(":contains('"+$("#searchbox").val()+"')").show(); 
 		});
+		$(".copy_code").on("click",function(){
+			var copyVal=$(this).prev().html().trim();
+			Clipboard.copy(copyVal);
+		})
 	</script>
 </html>
