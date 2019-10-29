@@ -18,7 +18,7 @@
 			#toptitle{
 				position: fixed;
 				width: 100%;
-				height: 80px;
+				height: 100px;
 				background: #564f43;
 				font-size: 32px;
 				line-height: 60px;
@@ -27,14 +27,44 @@
 				top: 0;
 				z-index: 998;
 			}
-			#searchbox{
+			#searchbox_waikuang{
 				position: absolute;
-				bottom: 7px;
-				width: 220px;
+				width: 100%;
+				height: 20px;
+				bottom: 28px;
+				line-height: 4px;
+			}
+			#searchbox{
 				border-radius: 10px;
 				padding: 1px 5px;
 				outline:none;  
 				border:none;
+				margin-top: -1px;
+			}
+			.navigation_box{
+				position: absolute;
+				width: 100%;
+				height: 24px;
+				/* background: #f66; */
+				font-size: 14px;
+				line-height: 24px;
+				bottom: 1px;
+				
+				right: 0px;
+			}
+			.navigation_button{
+				background: #564F43;
+				border: #FFFFFF 2px solid;
+				border-radius: 10px;
+				padding: 0px 5px;
+				margin: 7px;
+				font-size: 12px;
+				cursor:pointer;
+			}
+			.xuanzhong{
+				background: #fff;
+				color: #564F43;
+				font-weight: 600;
 			}
 			.newfont{
 				font-family: fzmwt;
@@ -67,7 +97,7 @@
 			}
 			#game_list{
 				position: absolute;
-				top: 80px;
+				top: 100px;
 				width: 100%;
 				overflow-y: scroll;
 			}
@@ -103,17 +133,54 @@
 				background: #564f43;
 				color: #fff;
 				font-size: 12px;
-				padding: 1px 5px;
+				padding: 0px 5px;
 				border-radius: 10px;
-				line-height: 12px;
+				line-height: 14px;
 				cursor:pointer;
+			}
+			.update_log{
+				float: left;
+				margin-left: 5px;
+				margin-top: 5px;
+				color: #272727;
+				font-size: 14px;
+			}
+			.zhanwei{
+				color: #E6DDCE;
+			}
+			.loading_box{
+				width: 100%;
+				height: auto;
+				min-height: 84px;
+				margin-bottom: 5px;
+				border-bottom: 1px solid #a5957b;
+				overflow: hidden;
+				text-align: center;
+			}
+			.liuyan{
+				text-align: left;
+				margin: 0px 10px;
+			}
+			.dashang_img{
+				width: 80%;
+				max-width: 400px;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="toptitle">
 			能力勋章介绍页
-			<input type="search"  placeholder="请输入您要搜索的关键字" id="searchbox">
+			<div id="searchbox_waikuang">
+				<input type="search"  placeholder="请输入您要搜索的关键字" id="searchbox">
+			</div>
+			<div class="navigation_box">
+				<!-- <div class="" id="item_button">道具介绍</div>
+				<div id="update_button">更新日志</div>
+				<div id="author_button">作者留言</div> -->
+				<label class="navigation_button xuanzhong" id="item_button">道具介绍</label>
+				<label class="navigation_button" id="update_button">更新日志</label>
+				<label class="navigation_button" id="author_button">作者留言</label>
+			</div>
 		</div>
 		<div id="fontbutton" title="切换字体">A</div>
 		<div id="game_list">
@@ -127,7 +194,19 @@
 					<br><b>获取：</b>付借款方海口市发大水口积分兑换看递减法饥荒
 				</div>
 			</div> -->
-			
+			<!-- <div class="game_box">
+				<div class="update_log">
+					<b>版本：</b>1.0.0
+					<br><b>日期：</b>2019-09-12
+					<br><b>内容：</b>
+					<br><label class="zhanwei">占</label>1.厨师勋章相关内容
+					<br><label class="zhanwei">占</label>2.智慧勋章相关内容
+					<br><label class="zhanwei">占</label>3.大理石斧头、食人花手杖、熊皮宝箱道具ffffd多少的松岛枫但事实上所所所所所的的十分尴尬的啊啊是是阿斯达啊是仨方式是是
+				</div>
+			</div> -->
+			<div class="loading_box">
+				<div class="loading">页面加载中…</div>
+			</div>
 		</div>
 		<div id="foot">
 			Copyright © 2019 by Hengzi. All Rights Reserved.
@@ -136,15 +215,55 @@
 	<script src="js/jquery-2.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/clipboard.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-		$("#game_list").css("height",window.innerHeight-105);
-		$("#searchbox").css("left",(window.innerWidth-$("#searchbox").width()-10)/2);
-		$(window).resize(function(){
-			$("#searchbox").css("left",(window.innerWidth-$("#searchbox").width()-10)/2);
-		})
 		var shuju=$.ajax({url:"data/functional_medal2.json",async:false}).responseJSON;
+		var updatelog=$.ajax({url:"data/update_log.json",async:false}).responseJSON;
 		var htmlstr="";
+		$("#game_list").css("height",window.innerHeight-125);
+		// $("#item_button").addClass("xuanzhong");
+		$("#item_button").on("click",function(){
+			$(".navigation_button").removeClass("xuanzhong");
+			$("#item_button").addClass("xuanzhong");
+			$("#searchbox").val("");
+			spawnList();
+		})
+		$("#update_button").on("click",function(){
+			$(".navigation_button").removeClass("xuanzhong");
+			$("#update_button").addClass("xuanzhong");
+			$("#searchbox").val("");
+			//$("#game_list").html("更新日志");
+			$("#game_list").html("");
+			for(var i=0;i<updatelog.length;i++){
+				htmlstr="";
+				htmlstr+="<div class=\"game_box\"><div class=\"update_log\">";
+				htmlstr+="<b>版本：</b>"+updatelog[i].update_editon;
+				htmlstr+="<br><b>日期：</b>"+updatelog[i].update_date;
+				htmlstr+="<br><b>内容：</b><br><label class=\"zhanwei\">占</label>1."+updatelog[i].update_log1;
+				if(updatelog[i].update_log2!="") htmlstr+="<br><label class=\"zhanwei\">占</label>2."+updatelog[i].update_log2;
+				if(updatelog[i].update_log3!="") htmlstr+="<br><label class=\"zhanwei\">占</label>3."+updatelog[i].update_log3;
+				if(updatelog[i].update_log4!="") htmlstr+="<br><label class=\"zhanwei\">占</label>4."+updatelog[i].update_log4;
+				if(updatelog[i].update_log5!="") htmlstr+="<br><label class=\"zhanwei\">占</label>5."+updatelog[i].update_log5;
+				htmlstr+="</div></div>";
+				$("#game_list").append(htmlstr);
+			}
+		})
+		$("#author_button").on("click",function(){
+			$(".navigation_button").removeClass("xuanzhong");
+			$("#author_button").addClass("xuanzhong");
+			$("#searchbox").val("");
+			$("#game_list").html("");
+			htmlstr="";
+			htmlstr+="<div class=\"loading_box\"><b>设计初衷</b><div class=\"liuyan\"><label class=\"zhanwei\">两字</label>";
+			htmlstr+="联机版的饥荒很好玩，但是一个人开荒的时候能做的事情总是局限的，因此想给单人开荒玩家一个更加精彩的饥荒世界，于是就有了这个Mod。在我看来，不论是现实世界还是饥荒世界，人都应该是有成长的，活得久了，见的事情多了，做的事情多了，总应该有所进步。所以在我的饥荒世界里，你是可以通过努力获取更多的知识和能力的，希望现实世界的你也每天有所进步，日渐优秀！</div></div>";
+			htmlstr+="<div class=\"loading_box\"><b>关于Mod</b><div class=\"liuyan\"><label class=\"zhanwei\">两字</label>由于本Mod是我一个人完成的，也许有很多不足，如果您有什么意见或者建议都可以直接在Mod订阅页面给我留言哦，非常感谢！如果你喜欢这个Mod也欢迎帮我点个推荐哦，希望这个Mod能够给你带来快乐~</div></div>";
+			htmlstr+="<div class=\"loading_box\"><b>19.10.26留言</b><div class=\"liuyan\"><label class=\"zhanwei\">两字</label>这段时间由于工作较忙，没有很多的时间来更新这个Mod，非常抱歉！同时我也没有很多的时间玩游戏来评估这个Mod的优缺点，所以如果大家觉得有任何不合理或者体验有问题的地方欢迎给我留言哦！我非常希望能听到大家使用这个Mod后的感想！最近游戏又更新了小鱼人，我应该会再做一些和新内容有关的更新~最后，非常感谢那些打赏我、给我推荐以及给我留言的小伙伴们，你们真的给了我很多希望和动力，真心感谢！</div></div>";
+			htmlstr+="<div class=\"loading_box\"><b>感谢支持</b><div class=\"liuyan\"><label class=\"zhanwei\">两字</label>如果你喜欢这个Mod的话，欢迎打赏~你的支持就是我最大的动力！</div>";
+			htmlstr+="<img class=\"dashang_img\" src=\"img/weixin.png\" ><img class=\"dashang_img\" src=\"img/zhichi.png\" ></div>";
+			$("#game_list").append(htmlstr);
+		})
+		
 		spawnList();
 		function spawnList(){
+			$("#game_list").html("");
 			for(var i=0;i<shuju.length;i++){
 				htmlstr="";
 				htmlstr+="<div class=\"game_box\"><img class=\"game_img\" src=\""+shuju[i].item_img+"\"/><div class=\"game_jianjie\">";
@@ -163,8 +282,9 @@
 			}
 		}
 		$("#fontbutton").click(function(){
-			$("#toptitle").toggleClass("newfont");
-			$(".game_jianjie").toggleClass("newfont");
+			// $("#toptitle").toggleClass("newfont");
+			$(".game_box").toggleClass("newfont");
+			$(".loading_box").toggleClass("newfont");
 		})
 		$("#searchbox").bind('input propertychange', function(){
 			$(".game_box").hide().filter(":contains('"+$("#searchbox").val()+"')").show(); 
