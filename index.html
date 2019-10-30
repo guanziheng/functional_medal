@@ -219,7 +219,7 @@
 		var updatelog=$.ajax({url:"data/update_log.json",async:false}).responseJSON;
 		var isNewFont=false;
 		var htmlstr="";
-		$("#fontbutton").addClass("newfont");
+		//$("#fontbutton").addClass("newfont");
 		$("#game_list").css("height",window.innerHeight-125);
 		// $("#item_button").addClass("xuanzhong");
 		$("#item_button").on("click",function(){
@@ -296,7 +296,7 @@
 			else isNewFont=true;
 			$(".game_box").toggleClass("newfont");
 			$(".loading_box").toggleClass("newfont");
-			$("#fontbutton").toggleClass("newfont");
+			//$("#fontbutton").toggleClass("newfont");
 		})
 		$("#searchbox").bind('input propertychange', function(){
 			$(".game_box").hide().filter(":contains('"+$("#searchbox").val()+"')").show(); 
