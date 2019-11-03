@@ -1,6 +1,15 @@
 
 [
   {
+    "update_editon": "1.1.9",
+    "update_date": "2019-11-03",
+    "update_log1": "加入了蝙蝠陷阱，有效针对蝙蝠",
+    "update_log2": "将《在触手上》的解锁科技改成了魔法二本以配合智慧勋章制作",
+    "update_log3": "",
+    "update_log4": "",
+    "update_log5": ""
+  },
+  {
     "update_editon": "1.1.8",
     "update_date": "2019-10-31",
     "update_log1": "调整不朽勋章、不朽宝石、智能陷阱制作手册配方，提高了不朽系列道具的获取难度",
