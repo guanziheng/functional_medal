@@ -610,7 +610,7 @@
     "item_zhizuolan": "建筑栏",
     "item_keji": "蓝图解锁",
     "item_cailiao": "熊皮*1+木板*4+蜡纸*10",
-    "item_huoqu": "",
+    "item_huoqu": "阅读不朽之谜后有概率获得蓝图",
     "item_yinke": "",
     "item_special": "",
     "item_img": "http://m.qpic.cn/psb?/V14FD2gh4BewW6/WLDIrUBJYHOkqyR9Xx31otoOgflgD0wlDAfIqnLFNws!/b/dLYAAAAAAAAA&bo=QABAAAAAAAADFzI!&rf=viewer_4&t=5"
@@ -652,7 +652,7 @@
     "item_zhizuolan": "合成栏",
     "item_keji": "蓝图解锁",
     "item_cailiao": "不朽果实*1+彩虹宝石*1",
-    "item_huoqu": "",
+    "item_huoqu": "阅读不朽之谜后有概率获得蓝图",
     "item_yinke": "",
     "item_special": "",
     "item_img": "http://m.qpic.cn/psb?/V14FD2gh4BewW6/eXGrTOsZNQXK20b3emlZ*nsvio1Ux*4CMNVOx1YjtJk!/b/dDUBAAAAAAAA&bo=QABAAAAAAAADFzI!&rf=viewer_4&t=5"
@@ -688,7 +688,7 @@
   {
     "item_name": "逮捕勋章",
     "item_code": "arrest_certificate",
-    "item_function": "装备时击杀坎普斯可以获得一个小偷勋章",
+    "item_function": "装备时击杀坎普斯可以获得一个小偷勋章，击杀蝙蝠有概率得到蝙蝠陷阱蓝图",
     "item_naijiu": "",
     "item_duidie": "",
     "item_zhizuolan": "制图栏",
@@ -1010,7 +1010,7 @@
   {
     "item_name": "陷阱重置册",
     "item_code": "trapreset_book",
-    "item_function": "阅读后扣除33点精神，阅读者身边一定范围内的狗牙陷阱、荆棘陷阱会被重置",
+    "item_function": "阅读后扣除33点精神，阅读者身边一定范围内的狗牙陷阱、荆棘陷阱、蝙蝠陷阱会被重置",
     "item_naijiu": "10次",
     "item_duidie": "",
     "item_zhizuolan": "合成栏",
@@ -1024,7 +1024,7 @@
   {
     "item_name": "智能陷阱制作手册",
     "item_code": "autotrap_book",
-    "item_function": "阅读后扣除33点精神，阅读者身边一定范围内的狗牙陷阱、荆棘陷阱会升级成自动陷阱，拥有自动重置的能力，狗牙陷阱耐久会恢复为100%，荆棘陷阱升级后不会再消耗耐久",
+    "item_function": "阅读后扣除33点精神，阅读者身边一定范围内的狗牙陷阱、荆棘陷阱、蝙蝠陷阱会升级成自动陷阱，拥有自动重置的能力，狗牙陷阱耐久会恢复为100%，荆棘陷阱升级后不会再消耗耐久",
     "item_naijiu": "3次",
     "item_duidie": "",
     "item_zhizuolan": "合成栏",
@@ -1034,5 +1034,19 @@
     "item_yinke": "",
     "item_special": "",
     "item_img": "http://m.qpic.cn/psb?/V14FD2gh4BewW6/Awj95FuEka5iq*FKxIwVwNgw1owo1dgHyZ9OsbuKEYg!/b/dE4BAAAAAAAA&bo=QABAAAAAAAADFzI!&rf=viewer_4&t=5"
+  },
+  {
+    "item_name": "蝙蝠陷阱",
+    "item_code": "trap_bat",
+    "item_function": "可以被蝙蝠触发，造成等同于蝙蝠血量的伤害，对其他生物只能造成一点伤害",
+    "item_naijiu": "无限",
+    "item_duidie": "",
+    "item_zhizuolan": "战斗栏",
+    "item_keji": "蓝图解锁",
+    "item_cailiao": "金子*2+蜂刺*1+蜘蛛丝*1",
+    "item_huoqu": "装备逮捕勋章击杀蝙蝠时有概率掉落蓝图",
+    "item_yinke": "",
+    "item_special": "可以通过智能陷阱制作手册升级成智能蝙蝠陷阱",
+    "item_img": "http://m.qpic.cn/psb?/V14FD2gh4BewW6/twTN1taeDyaDrOw7Zuz.aWi0OYqje*1Qe.BrLR.hXIU!/b/dL4AAAAAAAAA&bo=QABAAAAAAAADByI!&rf=viewer_4"
   }
 ]
